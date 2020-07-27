@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "763713380606",
+    "firebase_url": "https://messmanagementsystem-56b44.firebaseio.com",
+    "project_id": "messmanagementsystem-56b44",
+    "storage_bucket": "messmanagementsystem-56b44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763713380606:android:1da39b759d592f850a45af",
+        "android_client_info": {
+          "package_name": "com.example.messmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763713380606-d0stpo8tp7s00ajpvqjnsqjp9cfl6p9d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAchKW96dYBnKD1_sXAUDmc_OpGp4RT2TU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763713380606-d0stpo8tp7s00ajpvqjnsqjp9cfl6p9d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

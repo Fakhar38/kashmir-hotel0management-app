@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Enter your Crediential to Register"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/student_name"
+            android:layout_width="73dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="28dp"
+            android:text="Name:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+            android:id="@+id/student_name_value"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="28dp"
+            android:clickable="true"
+            android:editable="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/student_name"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+            android:id="@+id/Regd_no"
+            android:layout_width="73dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="20dp"
+            android:text="Regd.No:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/student_name" />
+
+    <EditText
+            android:id="@+id/Regd_no_value"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:editable="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/Regd_no"
+            app:layout_constraintTop_toBottomOf="@+id/student_name_value" />
+
+    <TextView
+            android:id="@+id/department"
+            android:layout_width="73dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="20dp"
+            android:text="Department:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Regd_no" />
+
+    <EditText
+            android:id="@+id/department_value"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:editable="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/department"
+            app:layout_constraintTop_toBottomOf="@+id/Regd_no_value" />
+
+    <TextView
+            android:id="@+id/k_id"
+            android:layout_width="73dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="20dp"
+            android:text="K id:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/department" />
+
+    <EditText
+            android:id="@+id/mess_no_value"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:editable="true"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/k_id"
+            app:layout_constraintTop_toBottomOf="@+id/department_value" />
+
+    <TextView
+            android:id="@+id/hostel_name"
+            android:layout_width="73dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="20dp"
+            android:text="Hostel Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/k_id" />
+
+    <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="34dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="34dp"
+            android:background="@drawable/bg_btn_solid_purple"
+            android:onClick="submit"
+            android:text="Sign Up"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+            android:id="@+id/user_id"
+            android:layout_width="73dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="20dp"
+            android:text="User ID"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hostel_name" />
+
+    <EditText
+            android:id="@+id/user_id_value"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:editable="true"
+            android:text=""
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/user_id"
+            app:layout_constraintTop_toBottomOf="@+id/hostel_name_value" />
+
+    <TextView
+            android:id="@+id/password"
+            android:layout_width="73dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="25dp"
+            android:text="Password"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_id_value" />
+
+    <EditText
+            android:id="@+id/password_value"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:editable="true"
+            android:inputType="numberPassword"
+            android:text=""
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/user_id_value" />
+
+    <TextView
+            android:id="@+id/confirm_password"
+            android:layout_width="73dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="30dp"
+            android:text="Confirm Password"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_value" />
+
+    <TextView
+            android:id="@+id/confirm_password_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="3080dp"
+            android:text=""
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_value" />
+
+    <EditText
+            android:id="@+id/hostel_name_value"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:editable="true"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/hostel_name"
+            app:layout_constraintTop_toBottomOf="@+id/mess_no_value" />
+
+    <EditText
+            android:id="@+id/textView25"
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:editable="true"
+            android:inputType="numberPassword"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/confirm_password"
+            app:layout_constraintTop_toBottomOf="@+id/password_value" />
+</android.support.constraint.ConstraintLayout>

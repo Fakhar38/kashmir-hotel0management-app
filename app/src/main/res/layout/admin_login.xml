@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="324dp"
+            android:layout_height="50dp"
+
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Kashmir Management System"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/admin_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="User ID :"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.031"
+            app:layout_goneMarginTop="50dp" />
+
+    <EditText
+            android:id="@+id/admin_id_value"
+            android:layout_width="227dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:editable="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/admin_id" />
+
+    <TextView
+            android:id="@+id/admin_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:clickable="false"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Password:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/admin_id"
+            app:layout_constraintStart_toStartOf="@+id/admin_id"
+            app:layout_constraintTop_toBottomOf="@+id/admin_id_value" />
+
+    <EditText
+            android:id="@+id/admin_pass_value"
+            android:layout_width="226dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:editable="true"
+            android:inputType="numberPassword"
+            app:layout_constraintEnd_toEndOf="@+id/admin_id_value"
+            app:layout_constraintStart_toStartOf="@+id/admin_id_value"
+            app:layout_constraintTop_toBottomOf="@+id/admin_pass" />
+
+    <Button
+            android:id="@+id/admin_login_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/bg_btn_solid_purple"
+            android:onClick="adminLogin"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/admin_pass_value" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Kashmir Management System"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="MENU"
+            android:textSize="20sp" />
+
+    <Spinner
+            android:id="@+id/menuNameDropDown"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:background="@color/colorAccent"
+            android:spinnerMode="dropdown">
+
+    </Spinner>
+
+    <!--    <ListView-->
+    <!--            android:id="@+id/menuItemList"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="350dp">-->
+    <!--    </ListView>-->
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/myrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+    <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Total: "
+            android:id="@+id/total_bill"
+            android:padding="10dp"
+            android:background="@drawable/bg_btn_solid_purple"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Order Food"
+            android:gravity="center"
+            android:id="@+id/order_food"
+            android:onClick="OrderFoodFunction"
+            android:padding="5dp"
+            android:background="@drawable/bg_btn_solid_purple"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Previous Records"
+            android:gravity="center"
+            android:id="@+id/showhistory"
+            android:onClick="gotoRecordActivity"
+            android:padding="10dp"
+            android:background="@drawable/bg_btn_solid_purple"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    <CheckBox
+            android:id="@+id/attendence_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Attendence" />
+
+
+</LinearLayout>

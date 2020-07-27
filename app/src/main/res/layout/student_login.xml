@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="324dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Kashmir Management System"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/student_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:clickable="false"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Regist. No :"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+            android:id="@+id/student_id_value"
+            android:layout_width="241dp"
+            android:layout_height="44dp"
+            android:clickable="true"
+            android:editable="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:hint="your name here"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/student_id"
+            app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+            android:id="@+id/student_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:clickable="false"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Password:"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/student_id"
+            app:layout_constraintHorizontal_bias="0.29"
+            app:layout_constraintStart_toStartOf="@+id/student_id"
+            app:layout_constraintTop_toBottomOf="@+id/student_id_value"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+            android:id="@+id/student_pass_value"
+            android:layout_width="239dp"
+            android:layout_height="44dp"
+            android:clickable="true"
+            android:editable="true"
+            android:inputType="numberPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/student_id_value"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/student_id_value"
+            app:layout_constraintTop_toBottomOf="@+id/student_pass"
+            app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+            android:id="@+id/student_login_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/bg_btn_solid_purple"
+            android:onClick="signin"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/student_pass_value" />
+
+    <TextView
+            android:id="@+id/signup_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="false"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="If you don't have any account then Signup here!"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.234"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/student_login_btn" />
+
+    <Button
+            android:id="@+id/student_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_btn_solid_purple"
+            android:onClick="moveNext"
+            android:text="Sign up"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/student_login_btn"
+            app:layout_constraintStart_toStartOf="@+id/student_login_btn"
+            app:layout_constraintTop_toBottomOf="@+id/signup_text" />
+
+</android.support.constraint.ConstraintLayout>

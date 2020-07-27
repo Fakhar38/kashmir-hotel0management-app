@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.kmms.fkhr.StudentOrderRecord"
+        android:orientation="vertical">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Orders Records"
+            android:textSize="20sp" />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/order_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="20dp" />
+    <!--    <ListView-->
+    <!--            android:id="@+id/menuItemList"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="350dp">-->
+    <!--    </ListView>-->
+
+    <!--        <TextView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:text="Total: "-->
+    <!--                android:id="@+id/total_bill"-->
+    <!--                android:padding="10dp"-->
+    <!--                android:background="@drawable/bg_btn_solid_purple"-->
+    <!--                android:textColor="@android:color/white"-->
+    <!--                android:textSize="20sp" />-->
+    <!--        <TextView-->
+    <!--                android:layout_width="200dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:text="Order Food"-->
+    <!--                android:gravity="center"-->
+    <!--                android:id="@+id/order_food"-->
+    <!--                android:onClick="OrderFoodFunction"-->
+    <!--                android:padding="10dp"-->
+    <!--                android:background="@drawable/bg_btn_solid_purple"-->
+    <!--                android:textColor="@android:color/white"-->
+    <!--                android:textSize="20sp" />-->
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "395587513594",
+    "firebase_url": "https://studentdb-450bb.firebaseio.com",
+    "project_id": "studentdb-450bb",
+    "storage_bucket": "studentdb-450bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395587513594:android:c7ab83164c331f25",
+        "android_client_info": {
+          "package_name": "com.example.firebase_lecture11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395587513594-lg9h1k9pamm1l3r8mseibfvmg5ji9l87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5CjqQZIsZ8LDKocKRN1fsz6gzfdnMDlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395587513594-lg9h1k9pamm1l3r8mseibfvmg5ji9l87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
